@@ -1,13 +1,15 @@
 export DEBUG=0
 export FINALPACKAGE=1
 
-# 确保 Theos 目录正确
-THEOS := $(CURDIR)/theos  
+# 只在 THEOS 未定义时赋值，避免 make 误判
+ifndef THEOS
+THEOS := $(CURDIR)/theos
+endif
 
 # 项目名称
 TWEAK_NAME = WeChatEnhance
 
-# 根据 SCHEME 变量的值设置 Theos 包的方案和安装路径。
+# 根据 SCHEME 变量的值设置 Theos 包的方案和安装路径
 ifeq ($(SCHEME),roothide)
     export THEOS_PACKAGE_SCHEME = roothide
 else ifeq ($(SCHEME),rootless)
@@ -38,7 +40,7 @@ include $(THEOS)/makefiles/common.mk
 include $(THEOS)/makefiles/tweak.mk
 
 clean::
-	@echo -e "\033[31m==>\033[0m 正在清理......"
+	@echo -e "\033[31m==>\033[0m 正在清理……"
 	@rm -rf .theos packages
 
 after-package::
