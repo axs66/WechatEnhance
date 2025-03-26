@@ -1,0 +1,9 @@
+Package: com.wechat.enhance
+Name: WeChatEnhance
+Version: 1.1.9
+Architecture: iphoneos-arm
+Description: 微信插件，支持聊天按钮布局自定义等。
+Maintainer: 愫 茶
+Author: 愫 茶
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
