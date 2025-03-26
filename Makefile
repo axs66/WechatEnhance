@@ -1,6 +1,8 @@
 export DEBUG=0
 export FINALPACKAGE=1
-export THEOS=$(CURDIR)/theos  # 修正 Theos 路径
+
+# 确保 Theos 目录正确
+THEOS := $(CURDIR)/theos  
 
 # 项目名称
 TWEAK_NAME = WeChatEnhance
@@ -33,7 +35,7 @@ WeChatEnhance_FRAMEWORKS = UIKit Foundation LocalAuthentication
 
 # 包含 Theos make 系统
 include $(THEOS)/makefiles/common.mk
-include $(THEOS)/makefiles/tweak.mk  # 修正路径
+include $(THEOS)/makefiles/tweak.mk
 
 clean::
 	@echo -e "\033[31m==>\033[0m 正在清理......"
