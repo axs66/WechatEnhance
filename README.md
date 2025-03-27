@@ -15,8 +15,11 @@
 
 ## 免责声明
 
-本项目仅供学习交流使用，请勿用于非法用途。使用本项目所造成的任何问题，均与开发者无关。Controllers/CSCustomViewController.m第125行修改导航链接
-
+本项目仅供学习交流使用，请勿用于非法用途。使用本项目所造成的任何问题，均与开发者无关。
 ## 致谢
 
 感谢所有贡献者对项目的支持！ 
+
+## 备注
+Controllers/CSCustomViewController.m  第125行修改TG导航链接
+Headers/CSUserInfoHelper.h   第15行修改版本号
