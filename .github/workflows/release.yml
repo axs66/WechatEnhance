@@ -37,7 +37,7 @@ jobs:
       - name: Create GitHub Release
         id: release
         run: |
-          VERSION=V1.1.9
+          VERSION=V1.2.0
           gh release create $VERSION ${{ github.workspace }}/packages/*.deb --title "微信增强 $VERSION" --notes "Automated release of .deb files"
         env:
           GH_TOKEN: ${{ secrets.PAT }}  # 这里设置了 GitHub Token 用于授权
