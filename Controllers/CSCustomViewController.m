@@ -118,11 +118,11 @@ static NSString * const kUserAgreementAcceptedKey = @"com.wechat.tweak.user.agre
     
     // 添加查看TG频道按钮 - 保持取消按钮样式但防止关闭弹窗
     UIAlertAction *tgAction = [UIAlertAction 
-                               actionWithTitle:@"查看TG频道" 
+                               actionWithTitle:@"查看✈交流频道" 
                                style:UIAlertActionStyleCancel 
                                handler:^(UIAlertAction * _Nonnull action) {
         // 跳转到TG频道
-        NSURL *telegramURL = [NSURL URLWithString:@"https://t.me/wjrlj"];
+        NSURL *telegramURL = [NSURL URLWithString:@"https://t.me/wxfx8"];
         [[UIApplication sharedApplication] openURL:telegramURL options:@{} completionHandler:^(BOOL success) {
             // 在返回后重新显示协议弹窗
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -233,14 +233,12 @@ static NSString * const kUserAgreementAcceptedKey = @"com.wechat.tweak.user.agre
 - (NSString *)userAgreementText {
     return @"尊敬的用户：\n\n"
            @"欢迎使用本微信插件功能。使用本插件前，请您仔细阅读以下声明：\n\n"
-           @"1. 本插件由愫茶开发，仅在Telegram频道发布。\n\n"
-           @"2. 二次发布必须保留原始开发者署名，改名干嘛？自己不会写啊？？\n\n"
-           @"3. 本插件仅供个人学习研究使用，不得用于任何商业用途。\n\n"
-           @"4. 严禁恶意改名盈利，所有未经授权进行商业用途的行为将被永久拉黑。\n\n"
-           @"5. 使用本插件可能违反微信软件的使用条款，可能导致您的微信账号被封禁或限制。\n\n"
-           @"6. 您应自行承担使用本插件的全部风险和法律责任，开发者不对因使用本插件导致的任何直接或间接损失负责。\n\n"
-           @"7. 严禁利用本插件从事任何违法违规活动，包括但不限于侵犯他人隐私、进行网络诈骗等。\n\n"
-           @"8. 开发者保留随时修改、中断或终止本插件的权利，无需事先通知。";
+           @"1. 本插件仅供个人学习研究使用，不得用于任何商业用途。\n\n"
+           @"2. 严禁恶意改名盈利，所有未经授权进行商业用途的行为将被永久拉黑。\n\n"
+           @"3. 使用本插件可能违反微信软件的使用条款，可能导致您的微信账号被封禁或限制。\n\n"
+           @"4. 您应自行承担使用本插件的全部风险和法律责任，开发者不对因使用本插件导致的任何直接或间接损失负责。\n\n"
+           @"5. 严禁利用本插件从事任何违法违规活动，包括但不限于侵犯他人隐私、进行网络诈骗等。\n\n"
+           @"6. 开发者保留随时修改、中断或终止本插件的权利，无需事先通知。";
 }
 
 // 预加载头像图片
