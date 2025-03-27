@@ -1,6 +1,6 @@
 Package: com.wechat.enhance
 Name: WeChatEnhance微信增强
-Version: 1.1.9
+Version: 1.2.0
 Architecture: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Description: 微信插件，支持聊天按钮布局自定义等。
 Maintainer: Axs
